@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_food_image"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_order_number"
+                android:text="@string/order_numberString"
+                android:textColor="@android:color/holo_blue_light"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:text="@string/order_dateString"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:text="@string/name_deepString"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_order_status"
+                android:text="@string/order_status_placedString"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_num_items"
+                android:text="@string/number_of_items_String"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
